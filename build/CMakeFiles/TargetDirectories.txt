@@ -1,0 +1,3 @@
+/home/lol/Projects/Cellular-Automata/build/CMakeFiles/game_of_life.dir
+/home/lol/Projects/Cellular-Automata/build/CMakeFiles/edit_cache.dir
+/home/lol/Projects/Cellular-Automata/build/CMakeFiles/rebuild_cache.dir
