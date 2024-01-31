@@ -23,6 +23,7 @@ CMakeFiles/game_of_life.dir/src/GameOfLife.cpp.o: /home/lol/Projects/Cellular-Au
   /usr/include/bits/setjmp.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/thread-shared-types.h \
@@ -33,14 +34,18 @@ CMakeFiles/game_of_life.dir/src/GameOfLife.cpp.o: /home/lol/Projects/Cellular-Au
   /usr/include/bits/types.h \
   /usr/include/bits/types/FILE.h \
   /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
@@ -117,18 +122,22 @@ CMakeFiles/game_of_life.dir/src/GameOfLife.cpp.o: /home/lol/Projects/Cellular-Au
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/curses.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
+  /usr/include/ncurses_dll.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
+  /usr/include/stdio.h \
   /usr/include/sys/cdefs.h \
   /usr/include/time.h \
+  /usr/include/unctrl.h \
   /usr/include/wchar.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h \
@@ -322,8 +331,29 @@ CMakeFiles/game_of_life.dir/src/Grid.cpp.o: /home/lol/Projects/Cellular-Automata
 CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata/src/main.cpp \
   /home/lol/Projects/Cellular-Automata/include/GameOfLife.h \
   /home/lol/Projects/Cellular-Automata/include/Grid.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/time64.h \
   /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/c++/13.2.1/backward/binders.h \
   /usr/include/c++/13.2.1/bits/alloc_traits.h \
@@ -369,12 +399,21 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/curses.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/ncurses_dll.h \
   /usr/include/stdc-predef.h \
-  /usr/include/sys/cdefs.h
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/unctrl.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdint.h
 
 
 /home/lol/Projects/Cellular-Automata/src/main.cpp:
@@ -382,8 +421,6 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 /usr/include/sys/select.h:
 
 /usr/include/stdlib.h:
-
-/usr/include/stdio.h:
 
 /usr/include/locale.h:
 
@@ -459,8 +496,6 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/bits/uintn-identity.h:
 
-/usr/include/bits/types/struct_FILE.h:
-
 /usr/include/bits/select.h:
 
 /usr/include/bits/locale.h:
@@ -483,6 +518,18 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/time.h:
 
+/usr/include/sys/cdefs.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdint.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/sched.h:
+
+/usr/include/pthread.h:
+
 /usr/include/c++/13.2.1/backward/binders.h:
 
 /usr/include/bits/byteswap.h:
@@ -491,17 +538,15 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
-/usr/include/c++/13.2.1/bits/basic_ios.h:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/bits/cpu-set.h:
-
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/bits/types/time_t.h:
 
 /usr/include/c++/13.2.1/bits/parse_numbers.h:
+
+/usr/include/c++/13.2.1/bits/basic_ios.h:
+
+/usr/include/bits/types/struct_tm.h:
 
 /usr/include/bits/types/struct_timeval.h:
 
@@ -517,6 +562,8 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/bits/types/struct_sched_param.h:
 
+/usr/include/bits/types/struct_FILE.h:
+
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
@@ -526,6 +573,12 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 /usr/include/c++/13.2.1/bits/stl_function.h:
 
 /usr/include/c++/13.2.1/vector:
+
+/usr/include/ncurses_dll.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/bits/sched.h:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -539,13 +592,15 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/c++/13.2.1/bits/stl_bvector.h:
 
-/usr/include/bits/stdio_lim.h:
-
 /usr/include/bits/time.h:
+
+/usr/include/bits/stdio_lim.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
-/usr/include/sched.h:
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/13.2.1/bits/allocator.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -562,6 +617,10 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 /usr/include/bits/floatn.h:
 
 /usr/include/c++/13.2.1/cstdint:
+
+/usr/include/c++/13.2.1/debug/assertions.h:
+
+/usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
@@ -591,8 +650,6 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/bits/timesize.h:
 
-/usr/include/c++/13.2.1/initializer_list:
-
 /usr/include/c++/13.2.1/bits/invoke.h:
 
 /usr/include/bits/wordsize.h:
@@ -609,9 +666,13 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/bits/libc-header-start.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/wctype.h:
 
-/usr/include/bits/sched.h:
+/usr/include/bits/errno.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -622,24 +683,6 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 /usr/include/c++/13.2.1/chrono:
 
 /usr/include/bits/types/error_t.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/c++/13.2.1/bits/allocator.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/c++/13.2.1/debug/assertions.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/c++/13.2.1/bits/ptr_traits.h:
 
 /home/lol/Projects/Cellular-Automata/src/GameOfLife.cpp:
 
@@ -653,7 +696,15 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/c++/13.2.1/bits/functexcept.h:
 
+/usr/include/c++/13.2.1/initializer_list:
+
+/usr/include/c++/13.2.1/bits/ptr_traits.h:
+
 /usr/include/c++/13.2.1/bits/functional_hash.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13.2.1/bits/hash_bytes.h:
 
 /usr/include/c++/13.2.1/bits/locale_classes.tcc:
 
@@ -703,8 +754,6 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
 
-/usr/include/sys/cdefs.h:
-
 /usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/c++/13.2.1/limits:
@@ -731,15 +780,17 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/c++/13.2.1/ratio:
 
+/usr/include/unctrl.h:
+
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13.2.1/bits/range_access.h:
 
 /usr/include/gnu/stubs.h:
 
-/usr/include/bits/types/__fpos_t.h:
-
 /usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
 
 /usr/include/c++/13.2.1/bits/unique_ptr.h:
 
@@ -757,9 +808,9 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/stdint.h:
-
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/curses.h:
 
 /usr/include/c++/13.2.1/bits/stl_iterator.h:
 
@@ -774,9 +825,3 @@ CMakeFiles/game_of_life.dir/src/main.cpp.o: /home/lol/Projects/Cellular-Automata
 /usr/include/c++/13.2.1/bits/std_thread.h:
 
 /usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/13.2.1/bits/hash_bytes.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/pthread.h:

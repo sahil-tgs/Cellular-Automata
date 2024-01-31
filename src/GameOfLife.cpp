@@ -1,5 +1,7 @@
+// GameOfLife.cpp
 #include "GameOfLife.h"
 #include "Grid.h"
+#include <gtk/gtk.h>
 #include <thread>
 #include <chrono>
 
@@ -51,9 +53,22 @@ void GameOfLife::updateGrid() {
 }
 
 void GameOfLife::runSimulation() {
+    // GTK initialization
+    gtk_init(NULL, NULL);
+
+    // Create a GTK window
+    GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_default_size(GTK_WINDOW(window), 800, 600);
+    g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+
+    // GTK main loop
     while (true) {
-        grid_.print();
+        // Update the grid
         updateGrid();
+
+        // GTK event processing
+        gtk_main_iteration_do(FALSE);
+
         // Introduce a small delay for visualization
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
