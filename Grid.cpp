@@ -21,7 +21,7 @@ void Grid::initializeFromUserInput() {
     // You can use std::cin to get input from the user
 }
 
-void Grid::print() const {
+void Grid::print() {
     system("clear");  // For Linux/Mac. Use "cls" for Windows.
 
     for (int i = 0; i < rows_; ++i) {
@@ -36,7 +36,7 @@ bool Grid::getCell(int x, int y) const {
     if (x >= 0 && x < rows_ && y >= 0 && y < cols_) {
         return data_[x][y];
     }
-    return false; // Consider out-of-bounds as a dead cell
+    return false; // Consider out-of-bounds as dead cell
 }
 
 void Grid::setCell(int x, int y, bool value) {
@@ -44,3 +44,4 @@ void Grid::setCell(int x, int y, bool value) {
         data_[x][y] = value;
     }
 }
+
