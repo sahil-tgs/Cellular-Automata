@@ -1,3 +1,5 @@
+// Grid.h
+
 #ifndef GRID_H
 #define GRID_H
 
@@ -8,7 +10,7 @@ public:
     Grid(int rows, int cols);
     void initializeRandom();
     void initializeFromUserInput();
-    void print();
+    void print() const;  // <-- Change this line
     int getRows() const { return rows_; }
     int getCols() const { return cols_; }
     bool getCell(int x, int y) const;
