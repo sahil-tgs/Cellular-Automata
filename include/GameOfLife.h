@@ -1,9 +1,7 @@
-// In GameOfLife.h
 #ifndef GAMEOFLIFE_H
 #define GAMEOFLIFE_H
 
 #include "Grid.h"
-#include <ncurses.h>
 
 class GameOfLife {
 public:
@@ -15,9 +13,8 @@ public:
 
 private:
     int countNeighbors(int x, int y);
-    void drawGrid();
 
     Grid grid_;
 };
 
-#endif // GAMEOFLIFE_H
+#endif

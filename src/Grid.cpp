@@ -1,11 +1,11 @@
-// In Grid.cpp
 #include "Grid.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
 Grid::Grid(int rows, int cols) : rows_(rows), cols_(cols), data_(rows, std::vector<bool>(cols, false)) {
-    std::srand(static_cast<unsigned>(std::time(nullptr)));  // Seed the random number generator
+    // Seed the random number generator
+    std::srand(static_cast<unsigned>(std::time(nullptr)));
 }
 
 void Grid::initializeRandom() {
