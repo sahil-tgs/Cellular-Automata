@@ -1,12 +1,12 @@
-// ~/Grid.cpp
+// Grid.cpp
 
 #include "Grid.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <unordered_map>
 
 Grid::Grid(int rows, int cols) : rows_(rows), cols_(cols), data_(rows, std::vector<bool>(cols, false)) {
-    // Seed the random number generator
     std::srand(static_cast<unsigned>(std::time(nullptr)));
 }
 
@@ -19,12 +19,39 @@ void Grid::initializeRandom() {
 }
 
 void Grid::initializeFromUserInput() {
-    // Implement user input for initializing the grid
-    // You can use std::cin to get input from the user
+    std::cout << "Enter initial configuration (0 for dead, 1 for alive):\n";
+
+    for (int i = 0; i < rows_; ++i) {
+        for (int j = 0; j < cols_; ++j) {
+            int userInput;
+            std::cout << "Cell (" << i << ", " << j << "): ";
+            std::cin >> userInput;
+            data_[i][j] = userInput == 1;
+        }
+    }
+}
+
+void Grid::initializeFromPattern(const std::string& patternName) {
+    std::unordered_map<std::string, std::vector<std::vector<bool>>> patterns = {
+        {"Glider", {{0, 1, 0}, {0, 0, 1}, {1, 1, 1}}},
+        // Add more patterns as needed
+    };
+
+    auto it = patterns.find(patternName);
+    if (it != patterns.end()) {
+        const auto& pattern = it->second;
+        for (int i = 0; i < pattern.size() && i < rows_; ++i) {
+            for (int j = 0; j < pattern[i].size() && j < cols_; ++j) {
+                data_[i][j] = pattern[i][j];
+            }
+        }
+    } else {
+        std::cout << "Pattern not found. Using random initialization.\n";
+        initializeRandom();
+    }
 }
 
 void Grid::print() const {
-    // Clear the console. Adjust this part based on your platform.
     #ifdef _WIN32
     system("cls");
     #else
@@ -51,7 +78,5 @@ void Grid::setCell(int x, int y, bool value) {
         data_[x][y] = value;
     }
 }
-
-
 
 //comment to setup fall back

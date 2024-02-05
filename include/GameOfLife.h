@@ -1,3 +1,5 @@
+// GameOfLife.h
+
 #ifndef GAMEOFLIFE_H
 #define GAMEOFLIFE_H
 
@@ -11,14 +13,8 @@ public:
     void updateGrid();
     void runSimulation();
 
-private:
-    int countNeighbors(int x, int y);
-
+    // Make the grid_ member public
     Grid grid_;
 };
 
 #endif
-
-
-
-//comment to setup fall back
