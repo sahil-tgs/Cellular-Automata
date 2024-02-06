@@ -1,5 +1,3 @@
-// ~/GameOfLife.cpp
-
 #include "GameOfLife.h"
 #include <thread>
 #include <chrono>
@@ -9,6 +7,10 @@ GameOfLife::GameOfLife(int rows, int cols) : grid_(rows, cols) {
 
 void GameOfLife::initializeGridRandom() {
     grid_.initializeRandom();
+}
+
+void GameOfLife::initializeGridFromPattern(const std::string& patternName) {
+    grid_.initializeFromPattern(patternName);
 }
 
 int GameOfLife::countNeighbors(int x, int y) {
@@ -71,7 +73,3 @@ void GameOfLife::runSimulation() {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
-
-
-
-//comment to setup fall back

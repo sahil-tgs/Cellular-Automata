@@ -1,5 +1,3 @@
-// GameOfLife.h
-
 #ifndef GAMEOFLIFE_H
 #define GAMEOFLIFE_H
 
@@ -10,10 +8,13 @@ public:
     GameOfLife(int rows, int cols);
 
     void initializeGridRandom();
+    void initializeGridFromPattern(const std::string& patternName); // New method for pattern initialization
     void updateGrid();
     void runSimulation();
 
-    // Make the grid_ member public
+private:
+    int countNeighbors(int x, int y);
+
     Grid grid_;
 };
 
