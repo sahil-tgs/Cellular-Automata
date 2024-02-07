@@ -19,13 +19,12 @@ int GameOfLife::countNeighbors(int x, int y) {
     for (int i = -1; i <= 1; ++i) {
         for (int j = -1; j <= 1; ++j) {
             if (i == 0 && j == 0) {
-                continue;  // Skip the center cell (current cell)
+                continue;
             }
 
             int newX = x + i;
             int newY = y + j;
 
-            // Check if the neighbor is within bounds and alive
             if (newX >= 0 && newX < grid_.getRows() && newY >= 0 && newY < grid_.getCols()) {
                 if (grid_.getCell(newX, newY)) {
                     ++count;
@@ -44,24 +43,20 @@ void GameOfLife::updateGrid() {
         for (int j = 0; j < grid_.getCols(); ++j) {
             int neighbors = countNeighbors(i, j);
 
-            // Apply Conway's Game of Life rules
             if (grid_.getCell(i, j)) {
-                // Cell is alive
                 if (neighbors < 2 || neighbors > 3) {
-                    newGrid.setCell(i, j, false);  // Cell dies due to underpopulation or overpopulation
+                    newGrid.setCell(i, j, false);
                 } else {
-                    newGrid.setCell(i, j, true);  // Cell survives
+                    newGrid.setCell(i, j, true);
                 }
             } else {
-                // Cell is dead
                 if (neighbors == 3) {
-                    newGrid.setCell(i, j, true);  // Cell becomes alive due to reproduction
+                    newGrid.setCell(i, j, true);
                 }
             }
         }
     }
 
-    // Update the original grid with the new state
     grid_ = newGrid;
 }
 
@@ -69,7 +64,6 @@ void GameOfLife::runSimulation() {
     while (true) {
         grid_.print();
         updateGrid();
-        // Introduce a small delay for visualization
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }

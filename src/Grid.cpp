@@ -4,7 +4,6 @@
 #include <ctime>
 
 Grid::Grid(int rows, int cols) : rows_(rows), cols_(cols), data_(rows, std::vector<bool>(cols, false)) {
-    // Seed the random number generator
     std::srand(static_cast<unsigned>(std::time(nullptr)));
 }
 
@@ -16,10 +15,10 @@ void Grid::initializeRandom() {
     }
 }
 
-// void Grid::initializeFromUserInput() {
-//     // Implement user input for initializing the grid
-//     // You can use std::cin to get input from the user
-// }
+void Grid::initializeFromUserInput() {
+    // Implement user input for initializing the grid
+    // You can use std::cin to get input from the user
+}
 
 void Grid::initializeFromPattern(const std::string& patternName) {
     if (patternName == "Glider") {
@@ -47,7 +46,7 @@ void Grid::print() const {
 
     for (int i = 0; i < rows_; ++i) {
         for (int j = 0; j < cols_; ++j) {
-            std::cout << (data_[i][j] ? '#' : ' ');
+            std::cout << (data_[i][j] ? "\u2588" : "░"); // Unicode filled square or empty square
         }
         std::cout << std::endl;
     }

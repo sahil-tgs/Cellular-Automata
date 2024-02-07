@@ -2,14 +2,14 @@
 #define GRID_H
 
 #include <vector>
-#include <string> // Added for pattern initialization
+#include <string>
 
 class Grid {
 public:
     Grid(int rows, int cols);
     void initializeRandom();
     void initializeFromUserInput();
-    void initializeFromPattern(const std::string& patternName); // New method for pattern initialization
+    void initializeFromPattern(const std::string& patternName);
     void print() const;
     int getRows() const { return rows_; }
     int getCols() const { return cols_; }
@@ -21,7 +21,6 @@ private:
     int cols_;
     std::vector<std::vector<bool>> data_;
 
-    // Helper methods for initializing specific patterns
     void initializeGlider();
     void initializeBlinker();
     void initializeBeacon();

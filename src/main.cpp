@@ -2,10 +2,8 @@
 #include <iostream>
 
 int main() {
-    // Create a GameOfLife instance
     GameOfLife game(20, 50);
 
-    // Allow users to choose a pattern
     std::cout << "Choose a pattern to initialize the grid:\n";
     std::cout << "1. Glider\n";
     std::cout << "2. Blinker\n";
@@ -43,7 +41,6 @@ int main() {
             break;
     }
 
-    // Run the simulation
     game.runSimulation();
 
     return 0;

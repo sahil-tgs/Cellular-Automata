@@ -6,9 +6,8 @@
 class GameOfLife {
 public:
     GameOfLife(int rows, int cols);
-
     void initializeGridRandom();
-    void initializeGridFromPattern(const std::string& patternName); // New method for pattern initialization
+    void initializeGridFromPattern(const std::string& patternName);
     void updateGrid();
     void runSimulation();
 
