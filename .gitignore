@@ -1,3 +1,5 @@
 /build
 *.o
 game_of_life
+.vscode
+settings.json
