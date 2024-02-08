@@ -13,7 +13,6 @@ public:
 
 private:
     int countNeighbors(int x, int y);
-
     Grid grid_;
 };
 

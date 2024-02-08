@@ -15,6 +15,7 @@ public:
     int getCols() const { return cols_; }
     bool getCell(int x, int y) const;
     void setCell(int x, int y, bool value);
+    bool hasAliveCells() const; // New method to check if the grid has any alive cells
 
 private:
     int rows_;
